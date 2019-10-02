@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimUDuckApp.Interface;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,11 +7,14 @@ namespace SimUDuckApp.Ducks
 {
     public abstract class Duck
     {
+        public FlyBehavior FlyBehavior { private get; set; }
+        public QuackBehavior QuackBehavior { private get; set; }
+
         public string DuckType => this.GetType().Name;
 
         public virtual void Quack()
         {
-            Console.WriteLine("Quack-Quack");
+            this.QuackBehavior.Quack();
         }
 
         public virtual void Swim()
@@ -20,7 +24,7 @@ namespace SimUDuckApp.Ducks
 
         public virtual void Fly()
         {
-            Console.WriteLine(DuckType + " is flying");
+            this.FlyBehavior.Fly();
         }
 
         public abstract void Display();

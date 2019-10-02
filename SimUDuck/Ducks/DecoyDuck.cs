@@ -1,16 +1,15 @@
 ﻿using System;
-namespace SimUDuckApp
+namespace SimUDuckApp.Ducks
 {
-    public class RubberDuck : Duck
+    public class DecoyDuck : Duck
     {
         public override void Display()
         {
-            Console.WriteLine("It is Rubber Duck");
+            Console.WriteLine("It is Decoy Duck");
         }
 
         public override void Quack()
         {
-            Console.WriteLine("Squeak-Squeak");
         }
 
         public override void Fly()

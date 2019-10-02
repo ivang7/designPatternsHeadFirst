@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SimUDuckApp
+namespace SimUDuckApp.Ducks
 {
     public abstract class Duck
     {

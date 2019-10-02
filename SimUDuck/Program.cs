@@ -11,7 +11,9 @@ namespace SimUDuckApp
             
             ducks.Add(new MallardDuck());
             ducks.Add(new RedheadDuck());
+            ducks.Add(new DecoyDuck());
             ducks.Add(new MallardDuck());
+            ducks.Add(new RubberDuck());
 
             foreach (var duck in ducks)
             {

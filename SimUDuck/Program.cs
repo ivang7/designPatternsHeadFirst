@@ -18,6 +18,9 @@ namespace SimUDuckApp
                 duck.Display();
                 duck.Quack();
                 duck.Swim();
+                duck.Quack();
+                duck.Fly();
+
                 Console.WriteLine();
             }
         }

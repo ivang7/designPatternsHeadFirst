@@ -18,6 +18,11 @@ namespace SimUDuckApp
             Console.WriteLine(DuckType + " is swimming");
         }
 
+        public virtual void Fly()
+        {
+            Console.WriteLine(DuckType + " is flying");
+        }
+
         public abstract void Display();
     }
 }
